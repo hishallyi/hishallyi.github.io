@@ -108,6 +108,7 @@ html {
     padding        : 10px 20px;
     border         : 2px solid rgb(206, 192, 192);
     border-radius  : 30px;
+    height         : 20px;
     /* 圆角边框 */
     color          : rgb(231, 223, 223);
     text-decoration: none;
