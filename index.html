@@ -16,17 +16,17 @@
 <body>
     <div class="background">
         <div class="overlay"></div>
-        <div id="content">
+        <div class="fade-in" id="content">
             <!-- Header -->
             <header id="header">
                 <div class="icon">
                     <img src="assets/img/avatar.jpg" alt="Hishallyi's guide page" title="Hishallyi引导页" class="avatar" />
                 </div>
-                <div class="content">
-                    <div class="inner">
-                        <h1>Hishallyi</h1>
+                <div class="inner">
+                        <h1 class="name">Hishallyi</h1>
+                        <hr class="divider_up"/>
                         <p>以我观我而我自知&nbsp;自知乃于喧嚣城市而自立</p>
-                    </div>
+                        <hr class="divider_down"/>
                 </div>
                 <div>
                     <nav class="cover-navigation">
@@ -42,9 +42,12 @@
                     </nav>
                 </div>
                 <nav>
-                    <p>
+                    <p class="navigation-icon">
                         <a target="_blank" href="https://github.com/hishallyi">
                             <img src="assets/img/github.png" alt="Github" width="30px" />
+                        </a>&nbsp;&nbsp;&nbsp;
+                        <a target="_blank" href="https://gitee.com/hishallyi">
+                            <img src="assets/img/gitee.png" alt="Gitee" width="30px" />
                         </a>&nbsp;&nbsp;&nbsp;
                         <a target="_blank" href="https://docs.hishallyi.top/">
                             <img src="assets/img/blog.png" alt="Blog" width="30px" />
@@ -58,7 +61,6 @@
                     </p>
                 </nav>
             </header>
-
         </div>
         <!-- Footer -->
         <footer id="footer">
@@ -74,7 +76,7 @@
             </p>
         </footer>
     </div>
-
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

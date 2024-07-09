@@ -13,18 +13,48 @@ html {
 }
 
 .avatar {
-    width        : 150px;
-    height       : 150px;
+    width        : 100px;
+    height       : 100px;
     border-radius: 50%;
-    border       : 4px solid white;
+    border       : 3px solid white;
     object-fit   : cover;
+}
+
+.name {
+    margin        : 0 0 5px 0;
+    font-size     : 40px;
+    letter-spacing: 4px;
+    color         : #FFF;
+}
+
+.divider_up {
+    width     : 50%;
+    margin    : 20px auto;
+    border    : 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    opacity   : 0.3;
+}
+
+.divider_down {
+    width     : 30%;
+    margin    : 20px auto;
+    border    : 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    opacity   : 0.3;
+}
+
+.inner p {
+    font-size: 13px;
+    color    : #FFF;
+    margin   : 25px;
+
 }
 
 .background {
     position  : relative;
     width     : 100%;
     height    : 100%;
-    background: url("../img/background.png") no-repeat center center/cover;
+    background: url("../img/bg.png") no-repeat center center/cover;
 }
 
 .overlay {
@@ -47,20 +77,26 @@ html {
     transform : translateY(-50%);
 }
 
-/* 基本样式设置 */
+.fade-in {
+    opacity   : 0;
+    transition: opacity 2s ease-in-out;
+    /* 定义渐变效果 */
+}
+
 .navigation {
     list-style     : none;
     padding        : 0;
     margin         : 0;
     display        : flex;
     gap            : 10px;
-    /* 按钮之间的间距 */
     justify-content: center;
-    /* 水平居中 */
     align-items    : center;
-    /* 垂直居中 */
-    margin-top     : 20px;
-    /* 顶部外边距，可以根据需要调整 */
+    margin-top     : 60px;
+
+}
+
+.navigation-icon {
+    margin-top: 40px;
 }
 
 .navigation__item {
@@ -68,18 +104,16 @@ html {
 }
 
 .blog-button {
-    display         : inline-block;
-    padding         : 10px 20px;
-    border          : 2px solid white;
-    border-radius   : 30px;
+    display        : inline-block;
+    padding        : 10px 20px;
+    border         : 2px solid rgb(206, 192, 192);
+    border-radius  : 30px;
     /* 圆角边框 */
-    color           : white;
-    text-decoration : none;
-    font-size       : 16px;
-    font-weight     : bold;
-    background-color: rgba(255, 255, 255, 0.1);
-    /* 按钮的背景颜色，可以根据需要调整透明度 */
-    transition      : background-color 0.3s, color 0.3s;
+    color          : rgb(231, 223, 223);
+    text-decoration: none;
+    font-size      : 16px;
+    font-weight    : bold;
+    transition     : background-color 0.3s, color 0.3s;
 }
 
 .blog-button:hover {
@@ -89,14 +123,18 @@ html {
 }
 
 #footer {
-    position        : fixed;
-    bottom          : 0;
-    width           : 100%;
-    text-align      : center;
-    font-size       : 12px;
+    position  : fixed;
+    bottom    : 0;
+    width     : 100%;
+    text-align: center;
+    font-size : 12px;
     /* 缩小字体 */
-    color           : rgba(68, 66, 66, 0.5);
+    color     : rgba(85, 79, 79, 0.5);
     /* 透明度设为一半 */
-    padding         : 10px 0;
+    padding   : 10px 0;
     /* 可选，增加一些内边距 */
+}
+
+.navigation-icon {
+    margin-top: 30px;
 }
